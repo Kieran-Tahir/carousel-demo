@@ -1,17 +1,72 @@
-.body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .App {
   text-align: center;
+  padding: 100px;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f1f1f1;
+}
+
+.image-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  margin: 1px;
+}
+
+img {
+  width: 200px; /* Adjust the size as needed */
+  height: 200px; /* Adjust the size as needed */
+}
+
+.middle-image-container img {
+  width: 250px; /* Larger width for the middle image */
+  height: 250px; /* Larger height for the middle image */
+  // border: 2px solid #ff9900; /* Border for the middle image */
+}
+
+.transparent-button {
+  position: absolute;
+  background-color: transparent;
+  border: none; /* Set the border color for the buttons */
+  // color: #ffffff; /* Set the text color for the buttons */
+  padding: 10px 20px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.left-button {
+  top: 40%;
+  left: 0%;
+  width: 200px;
+  height: 200px;
+  transform: translateY(-50%);
+}
+
+.right-button {
+  top: 40%;
+  left: 0%;
+  width: 200px;
+  height: 200px;
+  transform: translateY(-50%);
+}
+
+.transparent-button:hover {
+  opacity: 1;
 }
